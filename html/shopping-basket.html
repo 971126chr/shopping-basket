@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/my-gifticon-popup.css">
+    <title>장바구니 &gt; 구매정보 입력</title>
+</head>
+<body>
+    <div class="top-nav-bar">
+        <div class="top-nav-bar-width">
+            <h1 class="gifticon">
+                <a href="#none">기업사이트</a>
+            </h1>
+            <ul class="top-nav-list">
+                <li>
+                    <a href="#none" title="서비스 소개">서비스 소개</a>
+                </li>
+                <li>
+                    <a href="#none" title="기프티콘 shop">기프티콘 SHOP</a>
+                </li>
+                <li>
+                    <a href="#none" title="캠페인 관리">캠페인 관리</a>
+                </li>
+                <li>
+                    <a href="#none" title="my 기프티콘">MY 기프티콘</a>
+                </li>
+            </ul>
+            <div class="search-box">
+                <form>
+                    <input type="text">
+                    <button class="search-button">검색</button>
+                </form>
+            </div>
+             <div class="quick-nav">
+                 <ul class="quick-nav-list">
+                     <li>
+                         <a href="#none" title="회원가입">회원가입</a>
+                     </li>
+                     <li>
+                        <a href="#none" title="장바구니">장바구니</a>
+                    </li>
+                    <li>
+                        <a href="#none" title="My 관심상품">My 관심상품</a>
+                    </li>
+                    <li>
+                        <a href="#none" title="기업서비스 소개">기업서비스 소개</a>
+                    </li>
+                    <li>
+                        <a href="#none" title="고객센터">고객센터</a>
+                    </li>
+                    <li>
+                        <a href="#none" title="개인고객" class="active">개인고객</a>
+                    </li>
+                 </ul>
+             </div>
+        </div>
+    </div>
+    <div class="contents">
+        <div class="header">
+            <div class="this-page">
+                <a href="#none" title="home" target="_blank" class="house-img">Home</a>
+                <span class="write-buy">구매정보 입력</span>
+            </div>
+            <h2 class="shopping-basket">장바구니</h2>
+            <div class="step">
+                <ul class="step-list">
+                    <li>
+                        <a href="#none" title="step 01 장바구니">
+                            <span class="org-text">step 01</span> 장바구니
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none" title="step 02 캠페인 선택하기">
+                            <span class="org-text">step 02</span> 캠페인 선택하기
+                        </a>
+                    </li>
+                    <li class="active">
+                        <span class="org-text">step 03</span> 구매정보 입력</li>
+                    <li>
+                        <span class="org-text">step 04</span> 주문정보 확인/결제</li>
+                    <li>
+                        <span class="org-text">step 05</span> 주문완료
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <div>
+                <table class="my-gifticon-table">
+                    <h3 class="table-caption">쿠폰 이미지 선택 제목</h3>
+                    <colgroup>
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 60%;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col" class="bold-text">발송상품</th>
+                            <th scope="col" colspan="2" class="bold-text">아이스 카라멜 마끼야또 S</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">
+                                <label for="group-name">발송그룹 명</label>
+                            </th>
+                            <td colspan="2">
+                                <input type="text" id="group-name" class="table-text-box" value="별별별 이벤트_9월 1째 주 이벤트 당첨자 (8/31~9/5)">
+                                <span class="limited-byte">(20/40Byte)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <label for="add-answer-num">회신 번호등록</label>
+                            </th>
+                            <td colspan="2">
+                                <input type="text" id="add-answer-num" class="table-text-box" value="02-123-4567">
+                                <button class="cancel-button">
+                                    <span class="cancel-button-center">
+                                        <span class="cancel-button-left">
+                                            <span class="cancel-button-right">
+                                                자주 쓰는 회신번호
+                                            </span>
+                                        </span>
+                                    </span>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" rowspan="3">수신 번호 등록</th>
+                            <th scope="row">
+                                <label for="repeat">수신자 중복 허용</label>
+                            </th>
+                            <td>
+                                <div>
+                                    <input type="radio" id="repeat-no" name="수신자 중복 허용" value="허용하지 않음" checked>
+                                    <label for="repeat-no">허용하지 않음</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="repeat" name="수신자 중복 허용" value="허용">
+                                    <label for="repeat">허용</label>
+                                </div>
+                                <p>※ 개별 추가 및 엑셀 업로드 시 전화번호 중복추가를 원하시는 경우 중복허용에 반드시 체크해 주세요.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <label for="your-information">수신자 정보 입력</label>
+                            </th>
+                            <td>
+                                <div>
+                                    <input type="radio" id="excel-file" name="수신자 정보 입력" value="엑셀 파일 업로드" checked>
+                                    <label for="excel-file">엑셀 파일 업로드</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="your-information" name="수신자 정보 입력" value="수신자 개별 추가">
+                                    <label for="your-information">수신자 개별 추가</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">수신자 엑셀 업로드</th>
+                            <td>
+                                <div class="p-padding">
+                                    <p class="text-bold">
+                                        총 10,000명의 수신자 정보를 입력하였습니다.
+                                    </p>
+                                </div>
+                                <button onclick="location.href='#none'" class="excel-download">
+                                    <span class="big-excel-center">
+                                        <span class="big-excel-left">
+                                            <span class="big-excel-right">
+                                                엑셀 업로드
+                                            </span>
+                                        </span>
+                                    </span>
+                                </button>
+                                <button class="cancel-button">
+                                    <span class="cancel-button-center">
+                                        <span class="cancel-button-left">
+                                            <span class="cancel-button-right">
+                                                엑셀 업로드 샘플
+                                            </span>
+                                        </span>
+                                    </span>
+                                </button>
+                                <ul class="width-line-list">
+                                    <li>데이터는 반드시 엑셀파일(*.xls)이어야 합니다.</li>
+                                    <li>엑셀 샘플 파일을 다운로드 후, 참조하여 주세요.</li>
+                                    <li>최대 1명~1000명까지 등록하실 수 있습니다.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <label for="choice-post">발송유형 선택</label>
+                            </th>
+                            <td colspan="2">
+                                <div>
+                                    <input type="radio" id="basic" name="수신자 정보 입력" value="기본형(롤링)으로 보내기" checked>
+                                    <label for="basic">기본형(롤링)으로 보내기</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="choice-post" name="수신자 정보 입력" value="MMS형으로 보내기">
+                                    <label for="choice-post">MMS형으로 보내기</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <label for="sms-text">SMS 문구</label>
+                            </th>
+                            <td colspan="2">
+                                <input type="text" id="sms-text" class="table-text-box" value="별별별 이벤트 당첨을 축하 드립니다!">
+                                <span class="limited-byte">(5/21Byte)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">이미지 꾸미기</th>
+                            <td colspan="2">
+                                <div class="gifticon-ex">
+                                    <img src="../img/my-gifticon/website/main/gifticon-ex.png" class="gifticon-img" title="기프티콘 이미지 미리보기">
+                                    <span class="cancel-button-center">
+                                        <span class="cancel-button-left">
+                                            <span class="cancel-button-right">
+                                                발송 이미지 미리보기
+                                            </span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="main-red-table">
+                                    <div class="p-padding">
+                                        <p class="text-bold">
+                                            꾸미기 이미지 선택
+                                        </p>
+                                        <p class="gray-text">
+                                            ※ 직접 쿠폰 이미지를 꾸민 후 기프티콘을 전송 하실 수 있습니다. 
+                                            <span class="indent">단, 사전 검수가 완료된 이미지로만 상품 쿠폰을 꾸미실 수 있습니다.</span>
+                                        </p>
+                                        <button class="cancel-button">
+                                            <span class="cancel-button-center">
+                                                <span class="cancel-button-left">
+                                                    <span class="cancel-button-right">
+                                                        신규 등록
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <div class="red-table">
+                                        <div>
+                                            <table class="red-table-th">
+                                                <h3 class="table-caption">꾸미기 이미지 선택</h3>
+                                                <colgroup>
+                                                    <col style="width: 20%;">
+                                                    <col style="width: 80%;">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">
+                                                            <div class="th-line">
+                                                                선택
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col">쿠폰이미지 제목</th>
+                                                    </tr>
+                                                </thead>
+                                            </table>
+                                        </div>
+                                        <div class="red-table-td-scroll">
+                                            <table class="red-table-td">
+                                                <h3 class="table-caption">꾸미기 이미지 선택 내용</h3>
+                                                <colgroup>
+                                                    <col style="width: 20%;">
+                                                    <col style="width: 80%;">
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="radio" name="쿠폰 이미지 제목" value="기프티콘 이미지" id="gifticon-img" checked>
+                                                        </td>
+                                                        <td>
+                                                            <label for="gifticon-img">
+                                                                기프티콘 이미지
+                                                            </label>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="radio" name="쿠폰 이미지 제목" value="우리 이벤트_하겐다즈 그린티 당첨자" id="greentea">
+                                                        </td>
+                                                        <td>
+                                                            <label for="greentea">
+                                                                우리 이벤트_하겐다즈 그린티 당첨자
+                                                            </label>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="radio" name="쿠폰 이미지 제목" value="기프티콘 이미지" id="dkcoffee">
+                                                        </td>
+                                                        <td>
+                                                            <label for="dkcoffee">
+                                                                던킨 커피&amp;도넛 당첨자
+                                                            </label>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button class="cancel-button">
+                                            <span class="cancel-button-center">
+                                                <span class="cancel-button-left">
+                                                    <span class="cancel-button-right">
+                                                        적용 이미지 확인
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <label for="deco-page">무선페이지 선택</label>
+                            </th>
+                            <td colspan="2">
+                                <div>
+                                    <input type="radio" id="deco-page" name="무선페이지 꾸미기" value="무선페이지 꾸미기">
+                                    <label for="deco-page">무선페이지 꾸미기</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="deco-page-no" name="무선페이지 꾸미기" value="무선페이지 꾸미지 않기" checked>
+                                    <label for="deco-page-no">무선페이지 꾸미지 않기</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <label for="time">발송시간 선택</label>
+                            </th>
+                            <td colspan="2">
+                                <div>
+                                    <input type="radio" id="now" name="발송시간 선택" value="즉시 발송하기" checked>
+                                    <label for="now">즉시 발송하기</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="time" name="발송시간 선택" value="예약 발송하기">
+                                    <label for="time">예약 발송하기</label>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tr>
+                        <th scope="row" class="bold-text">발송상품</th>
+                        <th scope="row" colspan="2" class="bold-text">파리크라상 제품교환권</th>
+                    </tr>
+                </table>
+            </div>
+            <div class="button-content">
+                <button class="cancel-button">
+                    <span class="cancel-button-center">
+                        <span class="cancel-button-left">
+                            <span class="cancel-button-right">
+                                이전
+                            </span>
+                        </span>
+                    </span>
+                </button>
+                <button class="top-left-button">
+                    <span class="orange-button-center">
+                        <span class="orange-button-left">
+                            <span class="orange-button-right">
+                                <span class="orange-button-arrow">
+                                    다음
+                                </span>
+                            </span>
+                        </span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-line">
+            <div class="footer-width">
+                <h3 class="gray-gifticon"></h3>
+                <div class="footer-main">
+                    <ul class="footer-list">
+                        <li>
+                            <a href="#none" title="기프티콘 서비스 안내">기프티콘 서비스 안내</a>
+                        </li>
+                        <li>
+                            <a href="#none" title="제휴/입점문의">제휴/입점문의</a>
+                        </li>
+                        <li>
+                            <a href="#none" title="상품발송안내">상품발송안내</a>
+                        </li>
+                        <li>
+                            <a href="#none" title="사이트 맵">사이트 맵</a>
+                        </li>
+                    </ul>
+                    <dl class="footer-dl">
+                        <dt>사업자 :</dt>
+                        <dd> SK텔레콤(주)/SK마케팅앤컴퍼니(주)</dd>
+                        <dt>대표 :</dt>
+                        <dd> 정만원/이방형</dd>
+                        <dt>사업자등록번호 :</dt>
+                        <dd> 104-81-37225/104-86-13723</dd>
+                        <dt class="none">주소 : </dt>
+                        <dd>서울특별시 중구 남대문로 4-45 상공회의소 5층 SK마케팅앤컴퍼니(주)</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p class="copyright-p">
+                Copyright &copy; <span class="red-sk">SK</span> 
+                <span class="copyright-yellow">marketing & company</span> 
+                All rights reserved.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
