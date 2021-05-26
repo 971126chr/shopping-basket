@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/my-gifticon-popup.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>장바구니 &gt; 구매정보 입력</title>
 </head>
 <body>
@@ -31,6 +31,7 @@
             <div class="search-box">
                 <form>
                     <input type="text">
+                    <a href="#none" title="검색" class="search-arrow"></a>
                     <button class="search-button">검색</button>
                 </form>
             </div>
@@ -80,16 +81,27 @@
                     <li class="active">
                         <span class="org-text">step 03</span> 구매정보 입력</li>
                     <li>
-                        <span class="org-text">step 04</span> 주문정보 확인/결제</li>
+                        <a href="#none" title="step 04 주문정보 확인/결제">
+                            <span class="org-text">step 04</span> 주문정보 확인/결제
+                        </a>
                     <li>
-                        <span class="org-text">step 05</span> 주문완료
+                        <a href="#none" title="step 05 주문완료">
+                            <span class="org-text">step 05</span> 주문완료
+                        </a>
                     </li>
                 </ul>
             </div>
         </div>
         <div class="main">
+            <button class="help-btn">
+                <span class="help-btn-left">
+                    <span class="help-btn-right">
+                        도움말
+                    </span>
+                </span>
+            </button>
             <div>
-                <table class="my-gifticon-table">
+                <table class="main-table">
                     <h3 class="table-caption">쿠폰 이미지 선택 제목</h3>
                     <colgroup>
                         <col style="width: 20%;">
@@ -99,7 +111,16 @@
                     <thead>
                         <tr>
                             <th scope="col" class="bold-text">발송상품</th>
-                            <th scope="col" colspan="2" class="bold-text">아이스 카라멜 마끼야또 S</th>
+                            <th scope="col" colspan="2" class="bold-text">
+                                아이스 카라멜 마끼야또 S
+                                <button class="reset-btn">
+                                    <span class="reset-btn-left">
+                                        <span class="reset-btn-right">
+                                            구매정보 재입력
+                                        </span>
+                                    </span>
+                                </button>
+                            </th>
                         </tr>
                     </thead>
                     <tbody>
@@ -118,12 +139,10 @@
                             </th>
                             <td colspan="2">
                                 <input type="text" id="add-answer-num" class="table-text-box" value="02-123-4567">
-                                <button class="cancel-button">
-                                    <span class="cancel-button-center">
-                                        <span class="cancel-button-left">
-                                            <span class="cancel-button-right">
-                                                자주 쓰는 회신번호
-                                            </span>
+                                <button class="main-table-btn">
+                                    <span class="main-table-btn-left">
+                                        <span class="main-table-btn-right">
+                                            자주 쓰는 회신번호
                                         </span>
                                     </span>
                                 </button>
@@ -170,20 +189,16 @@
                                     </p>
                                 </div>
                                 <button onclick="location.href='#none'" class="excel-download">
-                                    <span class="big-excel-center">
-                                        <span class="big-excel-left">
-                                            <span class="big-excel-right">
-                                                엑셀 업로드
-                                            </span>
+                                    <span class="big-excel-left">
+                                        <span class="big-excel-right">
+                                            엑셀 업로드
                                         </span>
                                     </span>
                                 </button>
-                                <button class="cancel-button">
-                                    <span class="cancel-button-center">
-                                        <span class="cancel-button-left">
-                                            <span class="cancel-button-right">
-                                                엑셀 업로드 샘플
-                                            </span>
+                                <button class="main-table-btn">
+                                    <span class="main-table-btn-left">
+                                        <span class="main-table-btn-right">
+                                            엑셀 업로드 샘플
                                         </span>
                                     </span>
                                 </button>
@@ -222,14 +237,14 @@
                             <th scope="row">이미지 꾸미기</th>
                             <td colspan="2">
                                 <div class="gifticon-ex">
-                                    <img src="../img/my-gifticon/website/main/gifticon-ex.png" class="gifticon-img" title="기프티콘 이미지 미리보기">
-                                    <span class="cancel-button-center">
-                                        <span class="cancel-button-left">
-                                            <span class="cancel-button-right">
+                                    <img src="../img/gifticon-s-b/main/gifticon-ex.png" class="gifticon-img" title="기프티콘 이미지 미리보기">
+                                    <button class="main-table-btn">
+                                        <span class="main-table-btn-left">
+                                            <span class="main-table-btn-right">
                                                 발송 이미지 미리보기
                                             </span>
                                         </span>
-                                    </span>
+                                    </button>
                                 </div>
                                 <div class="main-red-table">
                                     <div class="p-padding">
@@ -239,16 +254,14 @@
                                         <p class="gray-text">
                                             ※ 직접 쿠폰 이미지를 꾸민 후 기프티콘을 전송 하실 수 있습니다. 
                                             <span class="indent">단, 사전 검수가 완료된 이미지로만 상품 쿠폰을 꾸미실 수 있습니다.</span>
-                                        </p>
-                                        <button class="cancel-button">
-                                            <span class="cancel-button-center">
-                                                <span class="cancel-button-left">
-                                                    <span class="cancel-button-right">
+                                            <button class="main-table-btn">
+                                                <span class="main-table-btn-left">
+                                                    <span class="main-table-btn-right">
                                                         신규 등록
                                                     </span>
                                                 </span>
-                                            </span>
-                                        </button>
+                                            </button>
+                                        </p>
                                     </div>
                                     <div class="red-table">
                                         <div>
@@ -280,31 +293,31 @@
                                                 <tbody>
                                                     <tr>
                                                         <td>
-                                                            <input type="radio" name="쿠폰 이미지 제목" value="기프티콘 이미지" id="gifticon-img" checked>
+                                                            <input type="radio" name="쿠폰 이미지 제목" value="기프티콘 기본 이미지" id="gifticon-img" checked>
                                                         </td>
                                                         <td>
                                                             <label for="gifticon-img">
-                                                                기프티콘 이미지
+                                                                기프티콘 기본 이미지
                                                             </label>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td>
-                                                            <input type="radio" name="쿠폰 이미지 제목" value="우리 이벤트_하겐다즈 그린티 당첨자" id="greentea">
+                                                            <input type="radio" name="쿠폰 이미지 제목" value="한 여름 페스티벌 당첨" id="greentea">
                                                         </td>
                                                         <td>
                                                             <label for="greentea">
-                                                                우리 이벤트_하겐다즈 그린티 당첨자
+                                                                한 여름 페스티벌 당첨
                                                             </label>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td>
-                                                            <input type="radio" name="쿠폰 이미지 제목" value="기프티콘 이미지" id="dkcoffee">
+                                                            <input type="radio" name="쿠폰 이미지 제목" value="팅팅팅 탱탱탱 경품 이미지" id="dkcoffee">
                                                         </td>
                                                         <td>
                                                             <label for="dkcoffee">
-                                                                던킨 커피&amp;도넛 당첨자
+                                                                팅팅팅 탱탱탱 경품 이미지
                                                             </label>
                                                         </td>
                                                     </tr>
@@ -313,12 +326,10 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <button class="cancel-button">
-                                            <span class="cancel-button-center">
-                                                <span class="cancel-button-left">
-                                                    <span class="cancel-button-right">
-                                                        적용 이미지 확인
-                                                    </span>
+                                        <button class="main-table-btn">
+                                            <span class="main-table-btn-left">
+                                                <span class="main-table-btn-right">
+                                                    적용 이미지 확인
                                                 </span>
                                             </span>
                                         </button>
@@ -356,31 +367,34 @@
                                 </div>
                             </td>
                         </tr>
+                        <tr>
+                            <th scope="row" class="bold-text">발송상품</th>
+                            <th scope="row" colspan="2" class="bold-text">
+                                파리크라상 제품교환권
+                                <button class="reset-btn finish-btn-position">
+                                    <span class="reset-btn-left">
+                                        <span class="finish-btn-right">
+                                            구매정보 입력
+                                        </span>
+                                    </span>
+                                </button>
+                            </th>
+                        </tr>
                     </tbody>
-                    <tr>
-                        <th scope="row" class="bold-text">발송상품</th>
-                        <th scope="row" colspan="2" class="bold-text">파리크라상 제품교환권</th>
-                    </tr>
                 </table>
             </div>
             <div class="button-content">
-                <button class="cancel-button">
-                    <span class="cancel-button-center">
-                        <span class="cancel-button-left">
-                            <span class="cancel-button-right">
-                                이전
-                            </span>
+                <button class="back-btn">
+                    <span class="back-btn-left">
+                        <span class="back-btn-right">
+                            이전
                         </span>
                     </span>
                 </button>
-                <button class="top-left-button">
-                    <span class="orange-button-center">
-                        <span class="orange-button-left">
-                            <span class="orange-button-right">
-                                <span class="orange-button-arrow">
-                                    다음
-                                </span>
-                            </span>
+                <button class="next-btn">
+                    <span class="next-btn-left">
+                        <span class="next-btn-right">
+                            다음
                         </span>
                     </span>
                 </button>

@@ -21,7 +21,7 @@ h1.gifticon {
     line-height: 83px;
 }
 h1.gifticon a {
-    background: url("../img/my-gifticon/website/top-nav/gifticon.png") no-repeat left;
+    background: url("../img/gifticon-s-b/top-nav/gifticon.png") no-repeat left;
     padding: 7px 0 0 93px;
 }
 ul.top-nav-list {
@@ -34,7 +34,7 @@ ul.top-nav-list li {
     float: left;
 }
 ul.top-nav-list li:not(:last-child) {
-    background: url("../img/my-gifticon/website/top-nav/nav-line.png") no-repeat right center;
+    background: url("../img/gifticon-s-b/top-nav/nav-line.png") no-repeat right center;
 }
 ul.top-nav-list li:not(:last-child) a {
     padding-right: 20px;
@@ -50,19 +50,26 @@ ul.top-nav-list::after {
 .search-box {
     margin-left: 79px;
     display: inline-block;
+    position: relative;
 }
 .search-box input {
     width: 180px;
     height: 26px;
-    background: url("../img/my-gifticon/website/top-nav/search-arrow.png") no-repeat right;
     padding: 0 13px 0 5px;
     border: 2px solid #f1143c;
+}
+a.search-arrow {
+    background: url("../img/gifticon-s-b/top-nav/search-arrow.png") no-repeat center center;
+    position: absolute;
+    top: 0;
+    right: 44px;
+    padding: 12px 5px 14px 5px;
 }
 .search-box button.search-button {
     border: 2px solid #f1143c;
     border-left: none;
     margin-left: -6px;
-    background: url("../img/my-gifticon/website/top-nav/search-button.png") no-repeat;
+    background: url("../img/gifticon-s-b/top-nav/search-button.png") no-repeat;
     width: 42px;
     height: 26px;
     line-height: 2.5;
@@ -110,18 +117,18 @@ ul.top-nav-list::after {
 .header .this-page a.house-img {
     color: #989898;
     padding: 0 6px 0 18px;
-    background: url("../img/my-gifticon/website/top-nav/house-img.png") no-repeat left;
+    background: url("../img/gifticon-s-b/top-nav/house-img.png") no-repeat left;
 }
 .header .this-page span.write-buy {
     color: #737373;
     padding-left: 10px;
-    background: url("../img/my-gifticon/website/top-nav/gray-&gt.png") no-repeat left;
+    background: url("../img/gifticon-s-b/top-nav/gray-&gt.png") no-repeat left;
 }
 .header h2.shopping-basket {
     font-size: 37.7px;
     color: #f5370f;
     padding: 0 0 11px 70px;
-    background: url("../img/my-gifticon/website/header/shopping-basket.png") no-repeat left top;
+    background: url("../img/gifticon-s-b/header/shopping-basket.png") no-repeat left top;
     line-height: 52px;
     margin-top: 30px;
     border-bottom: 1px solid #dcdcdc;
@@ -149,8 +156,8 @@ ul.top-nav-list::after {
     padding-left: 9px;
 }
 .header .step ul.step-list li:not(:last-child) {
-    padding-right: 24px;
-    background: url("../img/my-gifticon/website/header/step-list-arrow.png") no-repeat right;
+    padding-right: 22px;
+    background: url("../img/gifticon-s-b/header/step-list-arrow.png") no-repeat right;
 }
 /*.header .step ul.step-list li:hover span.org-text,*/ .header .step ul.step-list li.active span.org-text {
     color: #f5370f;
@@ -169,116 +176,237 @@ ul.top-nav-list::after {
 .main {
     margin-top: 49px;
     padding-bottom: 407px;
+    position: relative;
 }
-.main table.my-gifticon-table tr th:first-child {
+button.help-btn {
+    display: inline-block;
+    background: url("../img/gifticon-s-b/main/help-btn.png") repeat-x;
+    line-height: 19px;
+    border: none;
+    font-size: 10px;
+    color: #999898;
+    position: absolute;
+    top: -28px;
+    right: 0;
+}
+span.help-btn-left {
+    display: inline-block;
+    background: url("../img/gifticon-s-b/main/help-btn-left.png") no-repeat left;
+    padding-left: 32px;
+}
+span.help-btn-right {
+    display: inline-block;
+    background: url("../img/gifticon-s-b/main/help-btn-right.png") no-repeat right;
+    padding-right: 15px;
+}
+
+/*main table*/
+
+table.main-table {
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    font-size: 12px;
+    position: relative;
+}
+h3.table-caption {
+    font-size: 0;
+}
+table.main-table tr {
+    line-height: 32px;
+}
+table.main-table > tbody > tr > th,
+table.main-table > tbody > tr > td {
+    border: 1px solid #f0f0f0;
+}
+table.main-table > tbody > tr > th {
+    border-left: none;
+}
+table.main-table > tbody > tr > td {
+    border-right: none;
+}
+table.main-table > tbody > tr:not(:last-child) > th {
+    font-weight: lighter;
+    background: #f5f5f5;
+    color: #7e7e7e;
+}
+table.main-table > thead > tr,
+table.main-table > tbody > tr:last-child {
+    background: #ebebeb;
+}
+table.main-table > tbody > tr:last-child  {
+    color: #7e7e7e;
+}
+table.main-table > tr > th:first-child {
     text-align: left;
     padding-left: 44px;
 }
-.main table.my-gifticon-table thead tr th:last-child {
+table.main-table > thead > tr > th:last-child,
+table.main-table > tbody > tr:last-child > th:last-child {
     text-align: left;
     padding-left: 14px;
 }
-.main table.my-gifticon-table tbody tr td {
+table.main-table > tbody > tr > td {
     position: relative;
     padding: 0 1px 0 8px;
 }
-.main table.my-gifticon-table tbody tr td span.limited-byte {
+button.reset-btn {
+    display: inline-block;
+    background: url("../img/gifticon-s-b/main/reset-btn.png") repeat-x;
+    line-height: 22px;
+    font-size: 11px;
+    color: #ffffff;
+    border: none;
+    position: absolute;
+    top: 5px;
+    right: 6px;
+}
+button.finish-btn-position {
+    top: 730px;
+}
+span.reset-btn-left {
+    display: inline-block;
+    background: url("../img/gifticon-s-b/main/reset-btn-left.png") no-repeat left;
+    padding-left: 8px;
+}
+span.reset-btn-right {
+    display: inline-block;
+    background: url("../img/gifticon-s-b/main/reset-btn-right.png") no-repeat right;
+    padding-right: 25px;
+}
+span.finish-btn-right {
+    display: inline-block;
+    background: url("../img/gifticon-s-b/main/finish-btn-right.png") no-repeat right;
+    padding-right: 12px;
+}
+input.table-text-box {
+    border: 1px solid #d8d8d8;
+    line-height: 21px;
+    width: 100%;
+    font-size: 12px;
+    padding-left: 5px;
+}
+table.main-table > tbody > tr > td > span.limited-byte {
     position: absolute;
     top: 0;
     right: 6px;
 }
-.main table.my-gifticon-table tbody tr:nth-child(2) td input {
+table.main-table > tbody > tr:nth-child(2) > td > input {
     width: 163px;
 }
-.main table.my-gifticon-table tbody tr td button.cancel-b {
+table.main-table > tbody > tr td button.cancel-b {
     line-height: 25px;
     margin-left: 2px;
 }
-.main table.my-gifticon-table tbody tr:nth-child(3) th:first-child,
-.main table.my-gifticon-table tbody tr:nth-child(5) th:first-child {
+table.main-table > tbody > tr:nth-child(3) > th:first-child,
+table.main-table > tbody > tr:nth-child(5) > th:first-child {
     vertical-align: middle;
 }
-.main table.my-gifticon-table tbody tr:nth-child(3) td div,
-.main table.my-gifticon-table tbody tr:nth-child(4) td div,
-.main table.my-gifticon-table tbody tr:nth-child(6) td div,
-.main table.my-gifticon-table tbody tr:nth-child(8) td > div,
-.main table.my-gifticon-table tbody tr:nth-child(9) td div,
-.main table.my-gifticon-table tbody tr:nth-child(10) td div {
+table.main-table > tbody > tr:nth-child(3) > td > div,
+table.main-table > tbody > tr:nth-child(4) > td > div,
+table.main-table > tbody > tr:nth-child(6) > td > div,
+table.main-table > tbody > tr:nth-child(8) > td > div,
+table.main-table > tbody > tr:nth-child(9) > td > div,
+table.main-table > tbody > tr:nth-child(10) > td > div {
     display: inline-block;
 }
-.main table.my-gifticon-table tbody tr:nth-child(3) td div:nth-child(2) {
+table.main-table > tbody > tr:nth-child(3) > td > div:nth-child(2) {
     padding-left: 50px;
 }
-.main table.my-gifticon-table tbody tr:nth-child(3) td {
+table.main-table > tbody > tr:nth-child(3) > td {
     line-height: 21px;
 }
-.main table.my-gifticon-table tbody tr:nth-child(4) th,
-.main table.my-gifticon-table tbody tr:nth-child(5) th {
-    padding-left: 35px;
+button.main-table-btn {
+    display: inline-block;
+    background: url("../img/gifticon-s-b/main/main-table-btn.png") repeat-x;
+    border: none;
+    line-height: 22px;
 }
-.main table.my-gifticon-table tbody tr:nth-child(4) td div:nth-child(2) {
+span.main-table-btn-left {
+    display: inline-block;
+    background: url("../img/gifticon-s-b/main/main-table-btn-left.png") no-repeat left;
+    padding-left: 10px;
+}
+span.main-table-btn-right {
+    display: inline-block;
+    background: url("../img/gifticon-s-b/main/main-table-btn-right.png") no-repeat right;
+    padding-right: 9px;
+}
+table.main-table > tbody > tr:nth-child(5) > th {
+    padding-left: 13px;
+}
+table.main-table > tbody > tr:nth-child(4) > td > div:nth-child(2) {
     padding-left: 37px;
 }
-.main table.my-gifticon-table tbody tr:nth-child(5) td {
+table.main-table > tbody > tr:nth-child(5) > td {
     padding: 0 1px 5px 14px;
     line-height: 27px;
 }
-td div.p-padding {
+table.main-table > tbody > tr > td > div.p-padding {
     padding-left: 3px;
 }
-td div.p-padding button.cancel-button {
+span.indent {
+    display: block;
+    text-indent: 12px;
+}
+table.main-table > tbody > tr > td >  div.p-padding > button.cancel-button {
     position: absolute;
     top: 30px;
     right: 2px;
 }
-td p.text-bold {
+div.main-red-table > div.p-padding {
+    position: relative;
+}
+div.main-red-table > div.p-padding > p.gray-text > button.main-table-btn {
+    position: absolute;
+    bottom: 0;
+    right: 2px;
+}
+div.main-red-table > div.p-padding > p.text-bold {
     font-weight: bold;
     padding-left: 9px;
-    background: url("../img/my-gifticon/website/main/table-text-arrow.png") no-repeat left center;
+    background: url("../img/gifticon-s-b/main/table-text-arrow.png") no-repeat left center;
 }
-.main table.my-gifticon-table tbody tr td button.excel-download {
+table.main-table > tbody > tr > td > button.excel-download {
     position: relative;
-    
 }
-.main table.my-gifticon-table tbody tr td button.excel-download span.big-excel-center {
+table.main-table > tbody > tr > td > button.excel-download {
     color: #ff5f28;
     line-height: 22px;
-}
-span.big-excel-center {
     display: inline-block;
-    background: url("../img/my-gifticon/website/main/big-excel.png") repeat-x;
+    border: none;
+    background: url("../img/gifticon-s-b/main/big-excel.png") repeat-x;
 }
 span.big-excel-left {
     display: inline-block;
-    background: url("../img/my-gifticon/website/main/big-excel-left.png") no-repeat;
+    background: url("../img/gifticon-s-b/main/big-excel-left.png") no-repeat;
     padding-left: 35px;
 }
 span.big-excel-right {
     display: inline-block;
-    background: url("../img/my-gifticon/website/main/big-excel-right.png") no-repeat right;
+    background: url("../img/gifticon-s-b/main/big-excel-right.png") no-repeat right;
     padding-right: 18px;
 }
-td ul.width-line-list {
-    list-style: url("../img/my-gifticon/website/main/width-line-marker.png") inside;
+table.main-table > tbody > tr > td > ul.width-line-list {
+    list-style: url("../img/gifticon-s-b/main/width-line-marker.png") inside;
     line-height: normal;
     margin-top: 4px;
 }
-.main table.my-gifticon-table tbody tr:nth-child(6) td {
+table.main-table > tbody > tr:nth-child(6) > td {
     padding-left: 15px;
 }
-.main table.my-gifticon-table tbody tr:nth-child(6) td div:last-child {
+table.main-table > tbody > tr:nth-child(6) > td > div:last-child {
     margin-left: 55px;
 }
-.main table.my-gifticon-table tbody tr:nth-child(8) th {
+table.main-table > tbody > tr:nth-child(8) > th {
     vertical-align: middle;
 }
-.main table.my-gifticon-table tbody tr:nth-child(8) td {
+table.main-table > tbody > tr:nth-child(8) > td {
     padding-top: 12px;
 }
 img.gifticon-img {
     display: block;
 }
-.main table.my-gifticon-table tbody tr:nth-child(8) td div.gifticon-ex span.cancel-button-center {
+table.main-table > tbody > tr:nth-child(8) > td > div.gifticon-ex > span.cancel-button-center {
     margin-top: 5px;
 }
 div.gifticon-ex {
@@ -287,11 +415,12 @@ div.gifticon-ex {
 div.main-red-table {
     margin-left: 19px;
     padding-top: 1px;
-    min-width: 496px;
+    min-width: 494px;
     position: relative;
 }
 div.main-red-table .red-table {
     line-height: 0px;
+    margin-top: 3px;
 }
 p.gray-text {
     font-size: 11px;
@@ -314,9 +443,9 @@ div.main-red-table > div.red-table > table.red-table-th thead tr th div.th-line 
 table.red-table-td {
     width: 100%;
 }
-table.red-table-td tbody tr td {
+table.red-table-td > tbody > tr > td {
     line-height: 42px;
-    padding-left: 25px;
+    text-align: center;
     color: #646464;
     font-size: 12px;
 }
@@ -336,30 +465,62 @@ div.red-table-td-scroll {
     max-height: 131px;
     overflow-y: scroll;
 }
-.main table.my-gifticon-table > tbody > tr:nth-child(8) > td {
+table.main-table > tbody > tr:nth-child(8) > td {
     padding-bottom: 20px;
 }
-.main table.my-gifticon-table tbody tr:nth-child(8) td div.main-red-table > div:last-child {
+table.main-table > tbody > tr:nth-child(8) > td > div.main-red-table > div:last-child {
     margin-top: 5px;
     text-align: right;
 }
-.main table.my-gifticon-table tbody tr:nth-child(9) td div:last-child {
+table.main-table > tbody > tr:nth-child(9) > td > div:last-child {
     padding-left: 95px;
 }
-.main table.my-gifticon-table tbody tr:nth-child(10) td div:last-child {
+table.main-table > tbody > tr:nth-child(10) > td > div:last-child {
     padding-left: 40px;
-}
-span.orange-button-arrow {
-    display: inline-block;
-    background: url("../img/my-gifticon/website/main/orange-button-arrow.png") no-repeat right;
-    padding-right: 10px;
 }
 .main div.button-content {
     margin-top: 37px;
     line-height: 0;
+    text-align: center;
+}
+button.back-btn {
+    display: inline-block;
+    background: url("../img/gifticon-s-b/main/back-btn.png") repeat-x;
+    line-height: 25px;
+    font-size: 11px;
+    color: #727272;
+    border: none;
+}
+span.back-btn-left {
+    display: inline-block;
+    background: url("../img/gifticon-s-b/main/back-btn-left.png") no-repeat left;
+    padding-left: 17px;
+}
+span.back-btn-right {
+    display: inline-block;
+    background: url("../img/gifticon-s-b/main/back-btn-right.png") no-repeat right;
+    padding-right: 18px;
+}
+button.next-btn {
+    display: inline-block;
+    background: url("../img/gifticon-s-b/main/next-btn.png") repeat-x;
+    line-height: 25px;
+    font-size: 11px;
+    color: #ffffff;
+    border: none;
+}
+span.next-btn-left {
+    display: inline-block;
+    background: url("../img/gifticon-s-b/main/next-btn-left.png") no-repeat left;
+    padding-left: 13px;
+}
+span.next-btn-right {
+    display: inline-block;
+    background: url("../img/gifticon-s-b/main/next-btn-right.png") no-repeat right;
+    padding-right: 23px;
 }
 .footer {
-    background: url("../img/my-gifticon/website/footer/footer-bg.png") repeat-x top;
+    background: url("../img/gifticon-s-b/footer/footer-bg.png") repeat-x top;
     width: 100%;
     min-height: 134px;
 }
@@ -373,7 +534,7 @@ span.orange-button-arrow {
     padding-left: 2px;
 }
 h3.gray-gifticon {
-    background: url("../img/my-gifticon/website/footer/gray-gifticon.png") no-repeat left center;
+    background: url("../img/gifticon-s-b/footer/gray-gifticon.png") no-repeat left center;
     display: inline-block;
     width: 75px;
     height: 25px;
@@ -397,7 +558,7 @@ ul.footer-list li:not(:first-child) a {
 }
 ul.footer-list li:not(:last-child) a {
     padding-right: 27px;
-    background: url("../img/my-gifticon/website/footer/footer-list-line.png") no-repeat right center;
+    background: url("../img/gifticon-s-b/footer/footer-list-line.png") no-repeat right center;
 }
 ul.footer-list::after {
     content: "";
