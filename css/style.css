@@ -42,7 +42,7 @@ ul.top-nav-list li:not(:last-child) a {
 ul.top-nav-list li:not(:first-child) a {
     padding-left: 15px;
 }
-ul.top-nav-list::after {
+ul.top-nav-list::after, .quick-nav ul.quick-nav-list::after, .header .step ul.step-list::after, ul.footer-list::after, dl.footer-dl::after, .store-top-nav-bar-width ul::after, ul.header-list::after, .header-search-bar-width dl::after, ul.recommend-list::after, .recommend-content::after, ul.tab-nav::after, ul.send-mind-gift::after, .rankings::after, .hot-event {
     content: "";
     display: block;
     clear: both;
@@ -98,11 +98,6 @@ a.search-arrow {
 .quick-nav ul.quick-nav-list li a:hover, .quick-nav ul.quick-nav-list li a.active {
     color: #333333;
     font-weight: bold;
-}
-.quick-nav ul.quick-nav-list::after {
-    content: "";
-    display: block;
-    clear: both;
 }
 .contents {
     margin: 0 auto;
@@ -167,11 +162,6 @@ a.search-arrow {
     font-size: 27px;
     color: #1e1e1e;
     font-weight: bold;
-}
-.header .step ul.step-list::after {
-    content: "";
-    display: block;
-    clear: both;
 }
 .main {
     margin-top: 49px;
@@ -353,7 +343,7 @@ table.main-table > tbody > tr > td >  div.p-padding > button.cancel-button {
     top: 30px;
     right: 2px;
 }
-div.main-red-table > div.p-padding {
+div.main-red-table > div.p-padding, table.main-table > tbody > tr > td > button.excel-download {
     position: relative;
 }
 div.main-red-table > div.p-padding > p.gray-text > button.main-table-btn {
@@ -361,13 +351,11 @@ div.main-red-table > div.p-padding > p.gray-text > button.main-table-btn {
     bottom: 0;
     right: 2px;
 }
-div.main-red-table > div.p-padding > p.text-bold {
+div.main-red-table > div.p-padding > p.text-bold, 
+table.main-table > tbody > tr > td > div.p-padding > p.text-bold {
     font-weight: bold;
     padding-left: 9px;
     background: url("../img/gifticon-s-b/main/table-text-arrow.png") no-repeat left center;
-}
-table.main-table > tbody > tr > td > button.excel-download {
-    position: relative;
 }
 table.main-table > tbody > tr > td > button.excel-download {
     color: #ff5f28;
@@ -560,11 +548,6 @@ ul.footer-list li:not(:last-child) a {
     padding-right: 27px;
     background: url("../img/gifticon-s-b/footer/footer-list-line.png") no-repeat right center;
 }
-ul.footer-list::after {
-    content: "";
-    display: block;
-    clear: both;
-}
 dl.footer-dl {
     font-size: 8px;
     color: #8d8d8d;
@@ -576,11 +559,6 @@ dl.footer-dl dt, dl.footer-dl dd {
 }
 dl.footer-dl dt, dl.footer-dl dd:not(:last-child) {
     padding-right: 5px;
-}
-dl.footer-dl::after {
-    content: "";
-    display: block;
-    clear: both;
 }
 .copyright-p {
     line-height: 60px;
@@ -691,11 +669,6 @@ ul.logout-last-list li:last-child a {
     padding-right: 11px;
     background: url("../img/gift-store/header/more-arrow.png") no-repeat right;
 }
-.store-top-nav-bar-width ul::after {
-    content: "";
-    display: block;
-    clear: both;
-}
 .header {
     width: 960px;
     margin: 0 auto;
@@ -724,11 +697,6 @@ ul.header-list li {
 }
 ul.header-list li a {
     padding: 19px 25px;
-}
-ul.header-list::after {
-    content: "";
-    display: block;
-    clear: both;
 }
 button.fast-find {
     border: 1px solid #000000;
@@ -822,11 +790,6 @@ span.gifticon-search-text {
 .header-search-bar-width dl dt, .header-search-bar-width dl dd {
     float: left;
 }
-.header-search-bar-width dl::after {
-    content: "";
-    display: block;
-    clear: both;
-}
 .store-main-width {
     width: 960px;
     margin: 0 auto;
@@ -834,7 +797,7 @@ span.gifticon-search-text {
 }
 .aside {
     position: absolute;
-    top: 10px;
+    top: 21px;
 }
 h2.gifticon-store {
     font-size: 21px;
@@ -852,19 +815,22 @@ h2.gifticon-store {
     line-height: 27px;
     padding-bottom: 6px;
     border-bottom: 1px solid #e6e6e6;
+    position: relative;
 }
 .your-id span.text-bold {
     font-weight: bold;
     letter-spacing: -2px;
 }
-.your-id button.cancel-button {
-    margin-left: 48px;
+.aside-dl > .your-id > button.main-table-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
     font-size: 11px;
 }
-.your-id span.cancel-button-left {
+.your-id span.main-table-btn-left {
     padding-left: 6px;
 }
-.your-id span.cancel-button-right {
+.your-id span.main-table-btn-right {
     padding-right: 7px;
 }
 dl.wish {
@@ -907,15 +873,18 @@ ul.aside-bottom-list li:not(:last-child) {
     border-bottom: 1px solid #ebebeb;
 }
 .section {
-    padding: 33px 0 0 240px;
+    padding: 43px 0 0 240px;
     margin: 0 auto;
     width: 960px;
 }
 .section-width {
     width: 720px;
+    position: relative;
 }
 .section-width .this-page {
-    text-align: right;
+    position: absolute;
+    top: -21px;
+    right: 0;
     font-size: 11px;
     color: #000000;
 }
@@ -953,20 +922,30 @@ p.ask {
     border-top: 1px solid #f0f0f0;
     padding: 20px 18px 8px 18px;
 }
-.dunkin {
+.best {
     width: 271px;
     min-height: 306px;
     padding-right: 19px;
     border-right: 1px solid #f5f5f5;
     display: inline-block;
+    position: relative;
 }
-.dunkin a.dunkin-click {
-    padding: 96px 59px 127px 0;
+.best a.best-click img.best-text {
+    position: absolute;
+    z-index: 1;
 }
-.dunkin-p {
+.best a.best-click img.best-product {
+    position: absolute;
+    top: 45px;
+    right: 59px;
+}
+.best a.best-click {
+    padding: 0 252px 220px 0;
+}
+.best-p {
     padding: 19px 0 0 2px;
     border-top: 1px solid #e6e6e6;
-    margin-top: 32px;
+    margin-top: 222px;
     letter-spacing: -1px;
     font-size: 12px;
     line-height: 17px;
@@ -987,42 +966,190 @@ ul.recommend-list {
 ul.recommend-list li {
     width: 33%;
     float: left;
-    border-bottom: 1px solid #f5f5f5;
     position: relative;
 }
-ul.recommend-list::after {
-    content: "";
-    display: block;
-    clear: both;
+ul.recommend-list li:nth-child(n+1):nth-child(-n+3) {
+    border-bottom: 1px solid #f5f5f5;
 }
 ul.recommend-list li:not(:nth-child(3)):not(:last-child) {
     border-right: 1px solid #f5f5f5;
 }
 ul.recommend-list li .recommend-first-tr {
-    padding: 101px 20px 14px 18px;
+    padding: 83px 20px 14px 18px;
     display: inline-block;
+    position: relative;
 }
-ul.recommend-list li a.gifticon-guide {
+ul.recommend-list li:first-child .recommend-first-tr,
+ul.recommend-list li:nth-child(4) .recommend-last-tr {
+    padding-left: 0;
+}
+li a.gifticon-guide {
     display: block;
     font-size: 12px;
     color: #646464;
-    letter-spacing: -2.5px;
     line-height: 14px;
+    letter-spacing: -1.5px;
 }
-.recommend-content::after {
+li a.food {
     content: "";
-    display: block;
-    clear: both;
+    padding: 81px 105px 0px 0px;
 }
-ul.recommend-list li a.food {
+li a.food img {
     position: absolute;
     top: 22px;
     left: 35px;
 }
+ul.recommend-list li:first-child a.food img,
+ul.recommend-list li:nth-child(4) a.food img {
+    left: 17px;
+}
+ul.recommend-list li:nth-child(5) a.food img {
+    left: 10px;
+}
 .recommend-last-tr {
     display: inline-block;
-    padding: 110px 20px 4px 18px;
+    padding: 84px 20px 4px 18px;
+    position: relative;
 }
 .store-second-main {
     margin-top: 30px;
+}
+.send-mind {
+    margin-top: 11px;
+}
+ul.tab-nav {
+    font-size: 12.69px;
+    line-height: 24px;
+}
+ul.tab-nav li {
+    float: left;
+    border: 1px solid #c6c6c6;
+    border-bottom: none;
+}
+ul.tab-nav li:not(:last-child) {
+    border-right: none;
+}
+ul.tab-nav li a {
+    padding: 3px 15px;
+    color: #686868;
+}
+ul.tab-nav li a:hover, ul.tab-nav li a.active {
+    border: 1px solid #6b6b6b;
+    border-right: none;
+    background: #7a7a7a;
+    color: #ffffff;
+}
+ul.send-mind-gift {
+    line-height: 0;
+    padding: 14px 19px 19px 17px;
+    border-top: 1px solid #cecece;
+    border-bottom: 1px solid #e6e6e6;
+}
+ul.send-mind-gift li {
+    float: left;
+    width: 20%;
+    padding-top: 15px;
+}
+ul.send-mind-gift li:nth-child(2) {
+    padding-top: 2px;
+}
+ul.send-mind-gift li:nth-child(3), ul.send-mind-gift li:nth-child(4) {
+    padding-top: 0;
+}
+ul.send-mind-gift li:not(:first-child) {
+    padding-left: 18px;
+}
+ul.send-mind-gift li:not(:last-child) {
+    padding-right: 18px;
+    border-right: 1px solid #f5f5f5;
+}
+ul.send-mind-gift li a.food {
+    padding: 30px 18px 48px 18px;
+}
+ul.send-mind-gift li a.food img {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+ul.send-mind-gift li a.gifticon-guide {
+    margin-top: 25px;
+}
+ul.send-mind-gift li a.price {
+    line-height: 18px;
+}
+.rankings > div {
+    float: left;
+    width: 47%;
+}
+h3.ranking-h3 {
+    line-height: 24px;
+    font-size: 12px;
+    color: #969696;
+    padding-left: 10px;
+    border: 1px solid #f1f1f1;
+    background: #f8f8f8;
+}
+.cold-winter-rank, .girl-friend-rank {
+    background: url("../img/gift-store/main/ranking-coffee.png") no-repeat left;
+    padding-left: 165px;
+    margin-top: 14px;
+}
+ol.winter-list {
+    list-style: decimal inside;
+}
+ol.winter-list li a {
+    font-size: 11px;
+    color: #646464;
+    line-height: 14px;
+}
+ol.winter-list li a.winter-list-title {
+    padding-right: 34px;
+}
+ol.winter-list li:nth-child(2) a.winter-list-title {
+    padding-right: 30px;
+}
+ol.winter-list li:nth-child(3) a.winter-list-title, 
+ol.winter-list li:last-child a.winter-list-title  {
+    padding-right: 56px;
+}
+ol.winter-list li:nth-child(4) a.winter-list-title {
+    padding-right: 32px;
+}
+ol.winter-list li::marker {
+    color: #ff820a;
+    font-weight: bold;
+}
+ol.winter-list li a.winter-list-price {
+    color: #9e9e9e;
+}
+.girl-friend {
+    margin-left: 31px;
+}
+.girl-friend-rank {
+    background: url("../img/gift-store/main/ranking-girl.png") no-repeat left;
+}
+ol.girl-list li a.winter-list-title {
+    padding-right: 51px;
+}
+ol.girl-list li:nth-child(2) a.winter-list-title {
+    padding-right: 35px;
+}
+ol.girl-list li:nth-child(3) a.winter-list-title, ol.girl-list li:nth-child(4) a.winter-list-title {
+    padding-right: 41px;
+}
+ol.girl-list li:last-child a.winter-list-title {
+    padding-right: 23px;
+}
+.hot-event {
+    margin-top: 13px;
+}
+.hot-event > div {
+    float: left;
+    width: 231px;
+    border: 1px solid #e6e6e6;
+    background: #f1f1f1;
+    min-height: 75px;
+}
+.hot-event > div:not(:last-child) {
+    margin-right: 13px;
 }
