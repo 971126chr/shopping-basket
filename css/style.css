@@ -42,7 +42,7 @@ ul.top-nav-list li:not(:last-child) a {
 ul.top-nav-list li:not(:first-child) a {
     padding-left: 15px;
 }
-ul.top-nav-list::after, .quick-nav ul.quick-nav-list::after, .header .step ul.step-list::after, ul.footer-list::after, dl.footer-dl::after, .store-top-nav-bar-width ul::after, ul.header-list::after, .header-search-bar-width dl::after, ul.recommend-list::after, .recommend-content::after, ul.tab-nav::after, ul.send-mind-gift::after, .rankings::after, .hot-event {
+ul.top-nav-list::after, .quick-nav ul.quick-nav-list::after, .header .step ul.step-list::after, ul.footer-list::after, dl.footer-dl::after, .store-top-nav-bar-width ul::after, ul.header-list::after, .header-search-bar-width dl::after, ul.recommend-list::after, .recommend-content::after, ul.tab-nav::after, ul.send-mind-gift::after, .rankings::after, .hot-event::after, ul.brand-names::after {
     content: "";
     display: block;
     clear: both;
@@ -1152,4 +1152,78 @@ ol.girl-list li:last-child a.winter-list-title {
 }
 .hot-event > div:not(:last-child) {
     margin-right: 13px;
+}
+.new {
+    width: 212px;
+    min-height: 95px;
+    border: 1px solid #e6e6e6;
+    display: inline-block;
+    position: relative;
+    vertical-align: bottom;
+}
+a.new-click {
+    padding: 7px 171px 67px 0px;
+}
+img.new-product {
+    position: absolute;
+    top: 20px;
+    left: 42px;
+}
+span.new-logo-name {
+    display: block;
+    text-align: center;
+    margin-top: 31px;
+    font-size: 11px;
+    color: #828282;
+    letter-spacing: -1px;
+}
+.brand {
+    display: inline-block;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    background: #f8f8f8;
+    width: 498px;
+    min-height: 95px;
+    margin-left: 4px;
+}
+a.lt {
+    background: url("../img/gift-store/main/brand-&lt.png") no-repeat left center;
+    display: inline-block;
+    padding: 15px 11px 76px 0;
+}
+a.gt {
+    background: url("../img/gift-store/main/brand-&gt.png") no-repeat right center;
+    display: inline-block;
+    padding: 15px 0 76px 11px;
+}
+ul.brand-names {
+    display: inline-block;
+    vertical-align: top;
+    width: 476px;
+    margin: 0 -6px;
+}
+ul.brand-names li {
+    width: 25%;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+ul.brand-names li a {
+    padding: 0px 74px 51px 43px;
+}
+ul.brand-names li a img {
+    position: absolute;
+    top: 21px;
+    left: 35px;
+}
+ul.brand-names li:nth-child(2) a img {
+    top: 19px;
+    left: 25px;
+}
+ul.brand-names li:nth-child(3) a img {
+    top: 19px;
+    left: 34px;
+}
+ul.brand-names li:last-child a img {
+    left: 21px;
 }
