@@ -106,32 +106,40 @@ a.search-arrow {
 }
 .header .this-page {
     text-align: right;
-    padding-right: 5px;
+    padding: 1px 5px 0 0;
     font-size: 11px;
+    letter-spacing: -0.9px;
 }
 .header .this-page a.house-img {
     color: #989898;
-    padding: 0 6px 0 18px;
-    background: url("../img/gifticon-s-b/top-nav/house-img.png") no-repeat left;
+    padding: 0 5px 0 17px;
+    background: url("../img/gifticon-s-b/top-nav/house-img.png") no-repeat left center;
 }
 .header .this-page span.write-buy {
     color: #737373;
     padding-left: 10px;
     background: url("../img/gifticon-s-b/top-nav/gray-&gt.png") no-repeat left;
+    letter-spacing: -0.7px;
 }
 .header h2.shopping-basket {
     font-size: 37.7px;
     color: #f5370f;
-    padding: 0 0 11px 70px;
+    padding: 0 0 11px 69px;
     background: url("../img/gifticon-s-b/header/shopping-basket.png") no-repeat left top;
     line-height: 52px;
     margin-top: 30px;
     border-bottom: 1px solid #dcdcdc;
 }
+.header h2.shopping-basket span.shopping-basket-text {
+    background: url("../img/gifticon-s-b/header/shopping-basket-text.png") no-repeat left;
+    font-size: 0;
+    display: block;
+}
 .header .step {
-    line-height: 92px;
+    line-height: 90px;
     border-bottom: 1px solid #dcdcdc;
     padding: 0 19px 0 10px;
+    min-height: 93px;
 }
 .header .step ul.step-list li {
     float: left;
@@ -141,18 +149,38 @@ a.search-arrow {
 }
 .header .step ul.step-list li a {
     color: #bbbbbb;
-    padding: 35px 0;
+    background: url("../img/gifticon-s-b/header/step-01-text.png") no-repeat right center;
+    padding: 33px 65px 37px 0;
+}
+.header .step ul.step-list li:nth-child(2) a {
+    background: url("../img/gifticon-s-b/header/step-02-text.png") no-repeat right center;
+    padding: 33px 117px 37px 0;
+}
+.header .step ul.step-list li:nth-child(4) a {
+    background: url("../img/gifticon-s-b/header/step-04-text.png") no-repeat right center;
+    padding: 33px 140px 37px 0;
+}
+.header .step ul.step-list li:last-child a {
+    background: url("../img/gifticon-s-b/header/step-05-text.png") no-repeat right center;
+    padding: 33px 67px 37px 0;
 }
 .header .step ul.step-list li span.org-text {
     font-size: 15px;
     color: #fcb9ab;
+    letter-spacing: -1.6px;
 }
 .header .step ul.step-list li:not(:first-child) {
-    padding-left: 9px;
+    padding-left: 12px;
 }
 .header .step ul.step-list li:not(:last-child) {
-    padding-right: 22px;
+    padding-right: 32px;
     background: url("../img/gifticon-s-b/header/step-list-arrow.png") no-repeat right;
+}
+.header .step ul.step-list li:nth-child(4) {
+    padding: 0 28px 0 44px;
+}
+.header .step ul.step-list li:nth-child(2) {
+    padding-right: 29px;
 }
 /*.header .step ul.step-list li:hover span.org-text,*/ .header .step ul.step-list li.active span.org-text {
     color: #f5370f;
@@ -162,6 +190,17 @@ a.search-arrow {
     font-size: 27px;
     color: #1e1e1e;
     font-weight: bold;
+    background: url("../img/gifticon-s-b/header/step-03-text.png") no-repeat right center;
+    padding: 1px 154px 0 12px;
+    position: relative;
+}
+.header .step ul.step-list li.active span.step-list-marker {
+    position: absolute;
+    top: 37px;
+    right: -31px;
+    width: 16px;
+    height: 18px;
+    background: url("../img/gifticon-s-b/header/step-list-arrow.png") no-repeat;
 }
 .main {
     margin-top: 49px;
@@ -174,6 +213,7 @@ button.help-btn {
     line-height: 19px;
     border: none;
     font-size: 10px;
+    font-weight: bold;
     color: #999898;
     position: absolute;
     top: -28px;
@@ -182,7 +222,7 @@ button.help-btn {
 span.help-btn-left {
     display: inline-block;
     background: url("../img/gifticon-s-b/main/help-btn-left.png") no-repeat left;
-    padding-left: 32px;
+    padding-left: 31px;
 }
 span.help-btn-right {
     display: inline-block;
@@ -197,6 +237,7 @@ table.main-table {
     border-bottom: 1px solid #dcdcdc;
     font-size: 12px;
     position: relative;
+    width: 100%;
 }
 h3.table-caption {
     font-size: 0;
@@ -210,6 +251,7 @@ table.main-table > tbody > tr > td {
 }
 table.main-table > tbody > tr > th {
     border-left: none;
+    letter-spacing: -0.5px;
 }
 table.main-table > tbody > tr > td {
     border-right: none;
@@ -226,9 +268,18 @@ table.main-table > tbody > tr:last-child {
 table.main-table > tbody > tr:last-child  {
     color: #7e7e7e;
 }
-table.main-table > tr > th:first-child {
+table.main-table > thead > tr > th:first-child,
+table.main-table > tbody > tr:first-child > th,
+table.main-table > tbody > tr:nth-child(2) > th,
+table.main-table > tbody > tr:nth-child(7) > th {
     text-align: left;
-    padding-left: 44px;
+    padding-left: 43px;
+}
+table.main-table > thead > tr > th:first-child {
+    letter-spacing: 0.5px;
+}
+table.main-table > thead > tr > th:last-child {
+    letter-spacing: 0.9px;
 }
 table.main-table > thead > tr > th:last-child,
 table.main-table > tbody > tr:last-child > th:last-child {
@@ -249,6 +300,7 @@ button.reset-btn {
     position: absolute;
     top: 5px;
     right: 6px;
+    letter-spacing: -1.5px;
 }
 button.finish-btn-position {
     top: 730px;
@@ -270,10 +322,10 @@ span.finish-btn-right {
 }
 input.table-text-box {
     border: 1px solid #d8d8d8;
-    line-height: 21px;
+    line-height: 18px;
     width: 100%;
     font-size: 12px;
-    padding-left: 5px;
+    padding-left: 3px;
 }
 table.main-table > tbody > tr > td > span.limited-byte {
     position: absolute;
@@ -310,6 +362,7 @@ button.main-table-btn {
     background: url("../img/gifticon-s-b/main/main-table-btn.png") repeat-x;
     border: none;
     line-height: 22px;
+    letter-spacing: -1.6px;
 }
 span.main-table-btn-left {
     display: inline-block;
@@ -321,8 +374,9 @@ span.main-table-btn-right {
     background: url("../img/gifticon-s-b/main/main-table-btn-right.png") no-repeat right;
     padding-right: 9px;
 }
-table.main-table > tbody > tr:nth-child(5) > th {
-    padding-left: 13px;
+table.main-table > tbody > tr > th.text-left {
+    text-align: left;
+    padding-left: 33px;
 }
 table.main-table > tbody > tr:nth-child(4) > td > div:nth-child(2) {
     padding-left: 37px;
@@ -330,6 +384,10 @@ table.main-table > tbody > tr:nth-child(4) > td > div:nth-child(2) {
 table.main-table > tbody > tr:nth-child(5) > td {
     padding: 0 1px 5px 14px;
     line-height: 27px;
+}
+table.main-table > tbody > tr:nth-child(3) > td,
+table.main-table > tbody > tr:nth-child(4) > td {
+    padding-left: 13px;
 }
 table.main-table > tbody > tr > td > div.p-padding {
     padding-left: 3px;
@@ -670,7 +728,7 @@ ul.logout-last-list li:last-child a {
     padding-right: 11px;
     background: url("../img/gift-store/header/more-arrow.png") no-repeat right;
 }
-.header {
+.header-gift-store {
     width: 960px;
     margin: 0 auto;
     padding: 0 7px 0 1px;
