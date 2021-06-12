@@ -271,6 +271,7 @@ table.main-table > tbody > tr:last-child  {
 table.main-table > thead > tr > th:first-child,
 table.main-table > tbody > tr:first-child > th,
 table.main-table > tbody > tr:nth-child(2) > th,
+table.main-table > tbody > tr:nth-child(6) > th,
 table.main-table > tbody > tr:nth-child(7) > th {
     text-align: left;
     padding-left: 43px;
@@ -335,6 +336,9 @@ table.main-table > tbody > tr > td > span.limited-byte {
 table.main-table > tbody > tr:nth-child(2) > td > input {
     width: 163px;
 }
+input[type="radio"] {
+    vertical-align: middle;
+}
 table.main-table > tbody > tr td button.cancel-b {
     line-height: 25px;
     margin-left: 2px;
@@ -352,10 +356,15 @@ table.main-table > tbody > tr:nth-child(10) > td > div {
     display: inline-block;
 }
 table.main-table > tbody > tr:nth-child(3) > td > div:nth-child(2) {
-    padding-left: 50px;
+    padding-left: 47px;
 }
 table.main-table > tbody > tr:nth-child(3) > td {
-    line-height: 21px;
+    line-height: 19px;
+    letter-spacing: -0.5px;
+    padding-bottom: 2px;
+}
+table.main-table > tbody > tr:nth-child(3) > td > p.td-reference {
+    letter-spacing: 0;
 }
 button.main-table-btn {
     display: inline-block;
@@ -363,34 +372,42 @@ button.main-table-btn {
     border: none;
     line-height: 22px;
     letter-spacing: -1.6px;
+    padding-left: 1px;
 }
 span.main-table-btn-left {
     display: inline-block;
     background: url("../img/gifticon-s-b/main/main-table-btn-left.png") no-repeat left;
     padding-left: 10px;
 }
-span.main-table-btn-right {
+span.main-table-btn-right, span.excel-padding {
     display: inline-block;
     background: url("../img/gifticon-s-b/main/main-table-btn-right.png") no-repeat right;
     padding-right: 9px;
+}
+table.main-table > tbody > tr:nth-child(5) > td > button.main-table-btn > span.main-table-btn-left > span.excel-padding {
+    padding-right: 18px;
 }
 table.main-table > tbody > tr > th.text-left {
     text-align: left;
     padding-left: 33px;
 }
+table.main-table > tbody > tr:nth-child(4) > td > div:first-child > label,
+table.main-table > tbody > tr:nth-child(4) > td > div:nth-child(2) > label {
+    padding-left: 3px;
+}
 table.main-table > tbody > tr:nth-child(4) > td > div:nth-child(2) {
-    padding-left: 37px;
+    padding-left: 23px;
 }
 table.main-table > tbody > tr:nth-child(5) > td {
-    padding: 0 1px 5px 14px;
-    line-height: 27px;
+    padding: 3px 1px 3px 14px;
+    line-height: 28px;
 }
 table.main-table > tbody > tr:nth-child(3) > td,
 table.main-table > tbody > tr:nth-child(4) > td {
     padding-left: 13px;
 }
 table.main-table > tbody > tr > td > div.p-padding {
-    padding-left: 3px;
+    padding: 0 0 1px 3px;
 }
 span.indent {
     display: block;
@@ -414,12 +431,14 @@ table.main-table > tbody > tr > td > div.p-padding > p.text-bold {
     font-weight: bold;
     padding-left: 9px;
     background: url("../img/gifticon-s-b/main/table-text-arrow.png") no-repeat left center;
+    letter-spacing: 0.7px;
 }
 table.main-table > tbody > tr > td > button.excel-download {
     color: #ff5f28;
     line-height: 22px;
     display: inline-block;
     border: none;
+    letter-spacing: -1.8px;
     background: url("../img/gifticon-s-b/main/big-excel.png") repeat-x;
 }
 span.big-excel-left {
@@ -433,15 +452,26 @@ span.big-excel-right {
     padding-right: 18px;
 }
 table.main-table > tbody > tr > td > ul.width-line-list {
-    list-style: url("../img/gifticon-s-b/main/width-line-marker.png") inside;
-    line-height: normal;
-    margin-top: 4px;
+    line-height: 15px;
+    margin: 5px 0 0 2px;
+    letter-spacing: -0.7px;
+}
+table.main-table > tbody > tr > td > ul.width-line-list > li {
+    background: url("../img/gifticon-s-b/main/width-line-marker.png") no-repeat left center;
+    padding-left: 10px;
+}
+table.main-table > tbody > tr:nth-child(6) > td > div:first-child > label {
+    margin-left: -1px;
 }
 table.main-table > tbody > tr:nth-child(6) > td {
     padding-left: 15px;
 }
 table.main-table > tbody > tr:nth-child(6) > td > div:last-child {
-    margin-left: 55px;
+    margin-left: 57px;
+}
+table.main-table > tbody > tr:nth-child(7) > td > input.table-text-box {
+    padding-left: 9px;
+    letter-spacing: 0.3px;
 }
 table.main-table > tbody > tr:nth-child(8) > th {
     vertical-align: middle;
