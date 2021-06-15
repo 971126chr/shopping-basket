@@ -304,7 +304,7 @@ button.reset-btn {
     letter-spacing: -1.5px;
 }
 button.finish-btn-position {
-    top: 730px;
+    top: 5px;
 }
 span.reset-btn-left {
     display: inline-block;
@@ -320,6 +320,12 @@ span.finish-btn-right {
     display: inline-block;
     background: url("../img/gifticon-s-b/main/finish-btn-right.png") no-repeat right;
     padding-right: 12px;
+}
+table.main-table > tbody > tr:last-child > th:last-child > button.reset-btn > span.reset-btn-left {
+    padding-left: 11px;
+}
+table.main-table > tbody > tr:last-child > th:last-child > button.reset-btn > span.reset-btn-left > span.finish-btn-right {
+    padding-right: 13px;
 }
 input.table-text-box {
     border: 1px solid #d8d8d8;
@@ -364,7 +370,7 @@ table.main-table > tbody > tr:nth-child(3) > td {
     padding-bottom: 2px;
 }
 table.main-table > tbody > tr:nth-child(3) > td > p.td-reference {
-    letter-spacing: 0;
+    letter-spacing: -0.2px;
 }
 button.main-table-btn {
     display: inline-block;
@@ -383,6 +389,15 @@ span.main-table-btn-right, span.excel-padding {
     display: inline-block;
     background: url("../img/gifticon-s-b/main/main-table-btn-right.png") no-repeat right;
     padding-right: 9px;
+}
+table.main-table > tbody > tr:nth-child(8) > td > div.gifticon-ex > button.main-table-btn {
+    margin-top: -1px;
+}
+table.main-table > tbody > tr:nth-child(8) > td > div.gifticon-ex > button.main-table-btn > span.main-table-btn-left {
+    padding-left: 22px;
+}
+table.main-table > tbody > tr:nth-child(8) > td > div.gifticon-ex > button.main-table-btn > span.main-table-btn-left > span.main-table-btn-right {
+    padding-right: 22px;
 }
 table.main-table > tbody > tr:nth-child(5) > td > button.main-table-btn > span.main-table-btn-left > span.excel-padding {
     padding-right: 18px;
@@ -411,7 +426,8 @@ table.main-table > tbody > tr > td > div.p-padding {
 }
 span.indent {
     display: block;
-    text-indent: 12px;
+    text-indent: 14px;
+    margin-top: 1px;
 }
 table.main-table > tbody > tr > td >  div.p-padding > button.cancel-button {
     position: absolute;
@@ -421,10 +437,22 @@ table.main-table > tbody > tr > td >  div.p-padding > button.cancel-button {
 div.main-red-table > div.p-padding, table.main-table > tbody > tr > td > button.excel-download {
     position: relative;
 }
+div.main-red-table > div.p-padding {
+    padding-left: 5px;
+}
 div.main-red-table > div.p-padding > p.gray-text > button.main-table-btn {
     position: absolute;
-    bottom: 0;
-    right: 2px;
+    bottom: -6px;
+    right: 0;
+}
+table.main-table > tbody > tr:nth-child(8) > td > .main-red-table > .p-padding > p.gray-text > button.main-table-btn {
+    letter-spacing: -0.5px;
+}
+table.main-table > tbody > tr:nth-child(8) > td > .main-red-table > .p-padding > p.gray-text > button.main-table-btn > span.main-table-btn-left {
+    padding-left: 11px;
+}
+table.main-table > tbody > tr:nth-child(8) > td > .main-red-table > .p-padding > p.gray-text > button.main-table-btn > span.main-table-btn-left > span.main-table-btn-right {
+    padding-right: 14px;
 }
 div.main-red-table > div.p-padding > p.text-bold, 
 table.main-table > tbody > tr > td > div.p-padding > p.text-bold {
@@ -432,6 +460,10 @@ table.main-table > tbody > tr > td > div.p-padding > p.text-bold {
     padding-left: 9px;
     background: url("../img/gifticon-s-b/main/table-text-arrow.png") no-repeat left center;
     letter-spacing: 0.7px;
+}
+div.main-red-table > div.p-padding > p.text-bold {
+    line-height: 11px;
+    padding-left: 13px;
 }
 table.main-table > tbody > tr > td > button.excel-download {
     color: #ff5f28;
@@ -469,15 +501,24 @@ table.main-table > tbody > tr:nth-child(6) > td {
 table.main-table > tbody > tr:nth-child(6) > td > div:last-child {
     margin-left: 57px;
 }
+table.main-table > tbody > tr:nth-child(7) > th {
+    letter-spacing: 0.8px;
+}
 table.main-table > tbody > tr:nth-child(7) > td > input.table-text-box {
     padding-left: 9px;
     letter-spacing: 0.3px;
 }
-table.main-table > tbody > tr:nth-child(8) > th {
+table.main-table > tbody > tr:nth-child(8) > th,
+table.main-table > tbody > tr:nth-child(9) > th,
+table.main-table > tbody > tr:nth-child(10) > th,
+table.main-table > tbody > tr:last-child > th {
     vertical-align: middle;
+    text-align: left;
+    padding-left: 37px;
 }
 table.main-table > tbody > tr:nth-child(8) > td {
     padding-top: 12px;
+    padding-bottom: 13px;
 }
 img.gifticon-img {
     display: block;
@@ -489,32 +530,41 @@ div.gifticon-ex {
     text-align: center;
 }
 div.main-red-table {
-    margin-left: 19px;
+    margin-left: 21px;
     padding-top: 1px;
-    min-width: 494px;
+    min-width: 521px;
+    vertical-align: top;
     position: relative;
 }
 div.main-red-table .red-table {
     line-height: 0px;
-    margin-top: 3px;
+    margin-top: 9px;
 }
 p.gray-text {
     font-size: 11px;
     color: #a9a9a9;
-    line-height: 15px;
+    line-height: 14px;
+    letter-spacing: -0.8px;
+    margin-top: 6px;
 }
-table.red-table-th,
-div.main-red-table > div.red-table > table.red-table-th {
+table.red-table-th {
     border-top: 1px solid #d8b19b;
     width: 100%;
     font-size: 12px;
-    color: #969696;
+    color: #898989;
     line-height: 32px;
     background: #f4e9e3;
 }
-table.red-table-th thead tr th div.th-line,
-div.main-red-table > div.red-table > table.red-table-th thead tr th div.th-line {
-    background: url("../img/my-gifticon/red-table-th-line.png") no-repeat right center;
+table.red-table-th > thead > tr > th {
+    font-weight: lighter;
+}
+div.red-table > div > table.red-table-th > thead > tr > th > div.th-line {
+    background: url("../img/gifticon-s-b/main/red-table-th-line.png") no-repeat right center;
+}
+table.red-table-th > thead > tr > th:last-child {
+    text-align: left;
+    padding-left: 153px;
+    letter-spacing: -0.8px;
 }
 table.red-table-td {
     width: 100%;
@@ -524,9 +574,19 @@ table.red-table-td > tbody > tr > td {
     text-align: center;
     color: #646464;
     font-size: 12px;
+    letter-spacing: -0.5px;
 }
-table.red-table-td tbody tr td:last-child {
-    padding-left: 21px;
+table.red-table-td > tbody > tr > td:last-child {
+    text-align: left;
+}
+table.red-table-td > tbody > tr:first-child > td:last-child {
+    padding-left: 141px;
+}
+table.red-table-td > tbody > tr:nth-child(2) > td:last-child {
+    padding-left: 138px;
+}
+table.red-table-td > tbody > tr:last-child > td:last-child {
+    padding-left: 124px;
 }
 table.red-table-td tbody tr:last-child {
     border-bottom: 2px solid #ead6ca;
@@ -541,18 +601,50 @@ div.red-table-td-scroll {
     max-height: 131px;
     overflow-y: scroll;
 }
-table.main-table > tbody > tr:nth-child(8) > td {
-    padding-bottom: 20px;
-}
 table.main-table > tbody > tr:nth-child(8) > td > div.main-red-table > div:last-child {
-    margin-top: 5px;
+    margin-top: -1px;
     text-align: right;
 }
+table.main-table > tbody > tr:nth-child(8) > td > div.main-red-table > div:last-child > button.main-table-btn {
+    letter-spacing: -1.2px;
+}
+table.main-table > tbody > tr:nth-child(8) > td > div.main-red-table > div:last-child > button.main-table-btn > span.main-table-btn-left {
+    padding-left: 19px;
+}
+table.main-table > tbody > tr:nth-child(8) > td > div.main-red-table > div:last-child > button.main-table-btn > span.main-table-btn-left > span.main-table-btn-right {
+    padding-right: 22px;
+}
+table.main-table > tbody > tr:nth-child(9) > th {
+    letter-spacing: -0.7px;
+}
+table.main-table > tbody > tr:nth-child(9) > td,
+table.main-table > tbody > tr:nth-child(10) > td {
+    padding-left: 13px;
+}
+table.main-table > tbody > tr:nth-child(9) > td > div:last-child > label {
+    margin-left: -3px;
+}
+table.main-table > tbody > tr:nth-child(10) > td > div:first-child > label {
+    padding-left: 2px;
+    letter-spacing: -0.6px;
+}
 table.main-table > tbody > tr:nth-child(9) > td > div:last-child {
-    padding-left: 95px;
+    padding-left: 89px;
 }
 table.main-table > tbody > tr:nth-child(10) > td > div:last-child {
-    padding-left: 40px;
+    padding-left: 35px;
+}
+table.main-table > tbody > tr:nth-child(10) > td > div:last-child > label {
+    margin-left: -2px;
+    letter-spacing: -0.6px;
+}
+table.main-table > tbody > tr:last-child > th:first-child {
+    letter-spacing: 1px;
+}
+table.main-table > tbody > tr:last-child > th:last-child {
+    letter-spacing: 1px;
+    position: relative;
+    padding-left: 12px;
 }
 .main div.button-content {
     margin-top: 37px;
@@ -593,7 +685,7 @@ span.next-btn-left {
 span.next-btn-right {
     display: inline-block;
     background: url("../img/gifticon-s-b/main/next-btn-right.png") no-repeat right;
-    padding-right: 23px;
+    padding-right: 22px;
 }
 .footer {
     background: url("../img/gifticon-s-b/footer/footer-bg.png") repeat-x top;
