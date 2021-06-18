@@ -1129,7 +1129,7 @@ p.ask {
     position: absolute;
     z-index: 1;
     top: 13px;
-    left: -1px;
+    left: 0;
 }
 .best a.best-click img.best-product {
     position: absolute;
@@ -1428,9 +1428,17 @@ ol.girl-list li:nth-child(3) a.winter-list-title, ol.girl-list li:nth-child(4) a
 ol.girl-list li:last-child a.winter-list-title {
     padding-right: 37px;
 }
-.section-width div:nth-child(5) {
+.section-width div:nth-child(5),
+.section-width div:nth-child(6) {
     margin-top: 14px;
     padding-left: 1px;
+}
+.section-width div:nth-child(6) {
+    margin-top: 16px;
+}
+.section-width div:nth-child(6) .send-mind,
+.hot-event {
+    margin-top: 10px;
 }
 .section-width div:nth-child(5) h3.recommend {
     background: url("../img/gift-store/main/fourth-main-h3.png") no-repeat left;
@@ -1441,9 +1449,6 @@ ol.girl-list li:last-child a.winter-list-title {
     width: 170px;
     margin-left: 7px;
     height: 17px;
-}
-.hot-event {
-    margin-top: 10px;
 }
 .hot-event > div {
     float: left;
@@ -1462,6 +1467,8 @@ ol.girl-list li:last-child a.winter-list-title {
 .section-width div:last-child p.ask {
     background: url("../img/gift-store/main/last-main-h3-p.png") no-repeat left;
     width: 136px;
+    height: 15px;
+    margin-left: 6px;
 }
 .new {
     width: 212px;
@@ -1472,20 +1479,25 @@ ol.girl-list li:last-child a.winter-list-title {
     vertical-align: bottom;
 }
 a.new-click {
-    padding: 7px 171px 67px 0px;
+    padding: 0px 210px 75px 0px;
+}
+a.new-click img.best-text {
+    position: absolute;
+    top: -1px;
+    left: -1px;
 }
 img.new-product {
     position: absolute;
-    top: 20px;
+    top: 19px;
     left: 42px;
 }
 span.new-logo-name {
     display: block;
     text-align: center;
-    margin-top: 31px;
+    margin-top: 53px;
     font-size: 11px;
     color: #828282;
-    letter-spacing: -1px;
+    letter-spacing: -1.1px;
 }
 .brand {
     display: inline-block;
@@ -1494,17 +1506,25 @@ span.new-logo-name {
     background: #f8f8f8;
     width: 498px;
     min-height: 95px;
-    margin-left: 4px;
+    margin-left: 3px;
 }
-a.lt {
-    background: url("../img/gift-store/main/brand-&lt.png") no-repeat left center;
+a.lt, a.gt {
     display: inline-block;
     padding: 15px 11px 76px 0;
+    position: relative;
+}
+a.lt img.lt-img {
+    position: absolute;
+    top: 39px;
+    left: 0;
 }
 a.gt {
-    background: url("../img/gift-store/main/brand-&gt.png") no-repeat right center;
-    display: inline-block;
     padding: 15px 0 76px 11px;
+}
+a.gt img.gt-img {
+    position: absolute;
+    top: 39px;
+    right: -1px;
 }
 ul.brand-names {
     display: inline-block;
@@ -1513,7 +1533,7 @@ ul.brand-names {
     margin: 0 -6px;
 }
 ul.brand-names li {
-    width: 25%;
+    width: 121px;
     float: left;
     text-align: center;
     position: relative;
@@ -1523,26 +1543,36 @@ ul.brand-names li a {
 }
 ul.brand-names li a img {
     position: absolute;
-    top: 21px;
-    left: 35px;
+    top: 20px;
+    left: 36px;
+}
+ul.brand-names li:nth-child(2) {
+    width: 125px;
 }
 ul.brand-names li:nth-child(2) a img {
     top: 19px;
-    left: 25px;
+    left: 21px;
+}
+ul.brand-names li:nth-child(3) {
+    width: 102px;
 }
 ul.brand-names li:nth-child(3) a img {
     top: 19px;
-    left: 34px;
+    left: 23px;
+}
+ul.brand-names li:last-child {
+    width: 124px;
 }
 ul.brand-names li:last-child a img {
-    left: 21px;
+    top: 21px;
+    left: 25px;
 }
 ul.brand-names li a span.new-logo-name {
-    margin-top: 53px;
+    margin-top: 54px;
 }
 .banner, .bottom-banner {
     position: absolute;
-    top: 20px;
+    top: 18px;
     right: -20px;
 }
 .banner-width, .bottom-banner-width {
@@ -1554,7 +1584,7 @@ ul.brand-names li a span.new-logo-name {
     background: #ffffff;
 }
 .bottom-banner {
-    top: 447px;
+    top: 445px;
 }
 .bottom-banner-width {
     min-height: 195px;
@@ -1579,12 +1609,19 @@ a.today-see-top-arrow {
     display: block;
 }
 .today-see-first {
-    min-height: 106px;
+    min-height: 107px;
     border-bottom: 1px solid #f0f0f0;
+}
+.today-see-product div.today-see-first:nth-child(3) {
+    border: none;
 }
 .today-see-first a.today-photo, .bottom-banner-width a.today-photo {
     display: block;
     padding: 0px 9px 12px 13px;
+    position: relative;
+}
+.today-see-first a.today-photo:first-child {
+    padding: 6px 9px 7px 13px;
 }
 .today-see-first a.today-name, .bottom-banner-width a.today-name {
     font-size: 11px;
@@ -1597,7 +1634,7 @@ a.today-name strong.today-price {
     padding: 0 0 12px 15px;
 }
 .today-see-product .today-see-first:nth-child(3) a.today-photo {
-    padding: 19px 11px 11px 13px;
+    padding: 19px 11px 6px 13px;
 }
 .today-see-product .today-see-first:nth-child(3) a.today-name {
     padding-left: 8px;
@@ -1607,7 +1644,7 @@ a.today-name strong.today-price {
 }
 a.today-see-bottom-arrow {
     background: url("../img/gift-store/main/today-bottom-arrow.png") no-repeat center center;
-    padding: 16.5px 36.5px;
+    padding: 17.5px 36.5px 14.5px 36.5px;
     display: block;
 }
 .banner-event {
@@ -1628,6 +1665,7 @@ a.today-see-bottom-arrow {
     display: block;
     padding-left: 25px;
     position: relative;
+    line-height: 14px;
 }
 .bottom-banner-width a.today-name strong.today-price {
     padding: 0;
